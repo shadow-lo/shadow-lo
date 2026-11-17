@@ -21,7 +21,6 @@ I mostly code in **.NET (C#)**, **Dart** and **Python**, and lately I build smal
   <a href="https://github.com/shadow-lo/intent-check"><img src="assets/generated/project-intent-check-en.svg" alt="intent-check: Claude Code skill" width="49%"></a>
   <a href="https://github.com/shadow-lo/token-budget"><img src="assets/generated/project-token-budget-en.svg" alt="token-budget: Python CLI" width="49%"></a>
   <a href="https://github.com/shadow-lo/envdiff"><img src="assets/generated/project-envdiff-en.svg" alt="envdiff: Python CLI" width="49%"></a>
-  <img src="assets/generated/project-commit-story-en.svg" alt="commit-story: coming soon" width="49%">
 </p>
 
 ### 📊 Stats
@@ -46,7 +45,6 @@ I mostly code in **.NET (C#)**, **Dart** and **Python**, and lately I build smal
   <a href="https://github.com/shadow-lo/intent-check"><img src="assets/generated/project-intent-check-tr.svg" alt="intent-check: Claude Code skill" width="49%"></a>
   <a href="https://github.com/shadow-lo/token-budget"><img src="assets/generated/project-token-budget-tr.svg" alt="token-budget: Python CLI" width="49%"></a>
   <a href="https://github.com/shadow-lo/envdiff"><img src="assets/generated/project-envdiff-tr.svg" alt="envdiff: Python CLI" width="49%"></a>
-  <img src="assets/generated/project-commit-story-tr.svg" alt="commit-story: yakında" width="49%">
 </p>
 
 ### 📊 İstatistikler

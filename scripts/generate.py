@@ -45,14 +45,6 @@ PROJECTS = [
         "en": "Keeps .env and .env.example in sync and catches real secrets, without printing a value.",
         "tr": ".env ile .env.example'ı senkron tutar, gerçek sırları değer göstermeden yakalar.",
     },
-    {
-        "repo": "commit-story",
-        "icon": "📜",
-        "kind": "Python CLI",
-        "en": "Turns your git history into a readable summary for standups, weekly reports and CVs.",
-        "tr": "Git geçmişini standup, haftalık rapor ve CV için okunabilir bir özete dönüştürür.",
-        "soon": True,
-    },
 ]
 
 LANG_COLORS = {
@@ -68,14 +60,14 @@ T = {
         "overview": "Overview", "contrib": "Total contributions", "commits": "Commits",
         "repos": "Public repos", "stars": "Stars earned", "prs": "Pull requests",
         "streak": "Current streak", "longest": "Longest streak", "days": "days",
-        "since": "since", "langs": "Most used languages", "soon": "coming soon",
+        "since": "since", "langs": "Most used languages",
         "updated": "updated",
     },
     "tr": {
         "overview": "Genel Bakış", "contrib": "Toplam katkı", "commits": "Commit",
         "repos": "Açık repo", "stars": "Kazanılan yıldız", "prs": "Pull request",
         "streak": "Güncel seri", "longest": "En uzun seri", "days": "gün",
-        "since": "başlangıç", "langs": "En çok kullanılan diller", "soon": "yakında",
+        "since": "başlangıç", "langs": "En çok kullanılan diller",
         "updated": "güncellendi",
     },
 }
@@ -318,20 +310,12 @@ def _wrap(text: str, width: int) -> list[str]:
 
 
 def project_svg(p: dict, info: dict, lang: str) -> str:
-    t = T[lang]
-    soon = p.get("soon") or not info.get("exists")
     lines = _wrap(p[lang], 46)[:3]
     desc = "".join(f'<tspan x="24" dy="{0 if i == 0 else 19}">{escape(s)}</tspan>' for i, s in enumerate(lines))
-    if soon:
-        foot = (f'<rect x="24" y="138" width="{24 + 7 * len(t["soon"])}" height="22" rx="11" fill="none" '
-                f'stroke="{ACCENT}" stroke-dasharray="3 3"/>'
-                f'<text x="{36 + 3.5 * len(t["soon"])}" y="153" class="s" text-anchor="middle" '
-                f'style="fill:{ACCENT}">⏳ {escape(t["soon"])}</text>')
-    else:
-        foot = (f'<circle cx="30" cy="149" r="5" fill="{LANG_COLORS.get(info.get("language") or "", ACCENT)}"/>'
-                f'<text x="42" y="153" class="s" style="fill:{TEXT}">{escape(info.get("language") or p["kind"])}</text>'
-                f'<text x="140" y="153" class="s">★ {info.get("stars", 0)}</text>'
-                f'<text x="190" y="153" class="s">⑂ {info.get("forks", 0)}</text>')
+    foot = (f'<circle cx="30" cy="149" r="5" fill="{LANG_COLORS.get(info.get("language") or "", ACCENT)}"/>'
+            f'<text x="42" y="153" class="s" style="fill:{TEXT}">{escape(info.get("language") or p["kind"])}</text>'
+            f'<text x="140" y="153" class="s">★ {info.get("stars", 0)}</text>'
+            f'<text x="190" y="153" class="s">⑂ {info.get("forks", 0)}</text>')
     body = f"""
 <text x="24" y="42" class="t" style="font-size:19px">{p["icon"]} <tspan style="fill:{MOON}">{escape(p["repo"])}</tspan></text>
 <text x="396" y="40" class="s" text-anchor="end" style="fill:{ACCENT2}">{escape(p["kind"])}</text>
@@ -340,8 +324,6 @@ def project_svg(p: dict, info: dict, lang: str) -> str:
 {foot}
 """
     svg = _frame(420, 176, f"pj{p['repo']}{lang}", body, f"{p['repo']}: {p[lang]}")
-    if soon:
-        svg = svg.replace(f'stroke="{BORDER}"/>', f'stroke="{BORDER}" stroke-dasharray="6 5"/>', 1)
     return svg
 
 
@@ -352,6 +334,8 @@ def render(data: dict) -> None:
         (OUT / f"languages-{lang}.svg").write_text(langs_svg(data, lang), encoding="utf-8")
         for p in PROJECTS:
             info = data["projects"].get(p["repo"], {"exists": False})
+            if not info.get("exists"):  # only published repos are shown
+                continue
             (OUT / f"project-{p['repo']}-{lang}.svg").write_text(project_svg(p, info, lang), encoding="utf-8")
 
 
