@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="70" viewBox="0 0 900 70" role="img" aria-label="night mountains">
+<defs><linearGradient id="f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a1680" stop-opacity="0"/><stop offset="1" stop-color="#1a0d45"/></linearGradient></defs>
+<rect width="900" height="70" fill="url(#f)" rx="10"/>
+<path d="M0 70 L0 52 L80 30 L150 48 L240 18 L330 46 L420 26 L500 50 L590 22 L680 44 L760 28 L840 48 L900 36 L900 70 Z" fill="#2b1266"/>
+<path d="M0 70 L0 60 L110 44 L200 60 L290 40 L380 58 L470 42 L560 62 L650 46 L740 60 L830 44 L900 56 L900 70 Z" fill="#0f0730"/>
+<circle cx="450" cy="14" r="5" fill="#f3f0ff" opacity=".9"/>
+</svg>
