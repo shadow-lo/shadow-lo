@@ -1,5 +1,5 @@
 {
- "commits_year": 15,
+ "commits_year": 17,
  "created": "2020-07-13",
  "days": {
   "2020-01-01": 0,
@@ -2514,7 +2514,7 @@
   "2026-11-14": 0,
   "2026-11-15": 0,
   "2026-11-16": 1,
-  "2026-11-17": 16,
+  "2026-11-17": 19,
   "2026-11-18": 0,
   "2026-11-19": 0,
   "2026-11-20": 0,
@@ -2568,14 +2568,22 @@
   "Kotlin": 49054,
   "NSIS": 33764,
   "PowerShell": 13385,
-  "Python": 79236,
+  "Python": 126656,
   "Rust": 1504739,
   "Shell": 1044,
   "Svelte": 714792,
   "TypeScript": 481044
  },
- "more": 6,
+ "more": 7,
  "projects": [
+  {
+   "description": "",
+   "forks": 0,
+   "language": "Python",
+   "repo": "commit-story",
+   "stars": 0,
+   "url": "https://github.com/shadow-lo/commit-story"
+  },
   {
    "description": "",
    "forks": 0,
@@ -2591,19 +2599,11 @@
    "repo": "token-budget",
    "stars": 0,
    "url": "https://github.com/shadow-lo/token-budget"
-  },
-  {
-   "description": "",
-   "forks": 0,
-   "language": "Python",
-   "repo": "intent-check",
-   "stars": 0,
-   "url": "https://github.com/shadow-lo/intent-check"
   }
  ],
  "prs": 0,
- "repos": 9,
+ "repos": 10,
  "stars": 2,
- "total": 37,
+ "total": 40,
  "updated": "2026-11-17"
 }

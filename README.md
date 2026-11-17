@@ -19,10 +19,10 @@ I mostly code in **.NET (C#)**, **Dart** and **Python**, and lately I build smal
 
 <!-- projects:en:start -->
 <p>
-  <a href="https://github.com/shadow-lo/envdiff"><img src="assets/generated/project-1-en.svg" alt="envdiff: Python CLI" width="49%"></a>
-  <a href="https://github.com/shadow-lo/token-budget"><img src="assets/generated/project-2-en.svg" alt="token-budget: Python CLI" width="49%"></a>
-  <a href="https://github.com/shadow-lo/intent-check"><img src="assets/generated/project-3-en.svg" alt="intent-check: Claude Code skill" width="49%"></a>
-  <a href="https://github.com/shadow-lo?tab=repositories"><img src="assets/generated/project-more-en.svg" alt="+6 more repos" width="49%"></a>
+  <a href="https://github.com/shadow-lo/commit-story"><img src="assets/generated/project-1-en.svg" alt="commit-story: Python CLI" width="49%"></a>
+  <a href="https://github.com/shadow-lo/envdiff"><img src="assets/generated/project-2-en.svg" alt="envdiff: Python CLI" width="49%"></a>
+  <a href="https://github.com/shadow-lo/token-budget"><img src="assets/generated/project-3-en.svg" alt="token-budget: Python CLI" width="49%"></a>
+  <a href="https://github.com/shadow-lo?tab=repositories"><img src="assets/generated/project-more-en.svg" alt="+7 more repos" width="49%"></a>
 </p>
 <!-- projects:en:end -->
 
@@ -46,10 +46,10 @@ I mostly code in **.NET (C#)**, **Dart** and **Python**, and lately I build smal
 
 <!-- projects:tr:start -->
 <p>
-  <a href="https://github.com/shadow-lo/envdiff"><img src="assets/generated/project-1-tr.svg" alt="envdiff: Python CLI" width="49%"></a>
-  <a href="https://github.com/shadow-lo/token-budget"><img src="assets/generated/project-2-tr.svg" alt="token-budget: Python CLI" width="49%"></a>
-  <a href="https://github.com/shadow-lo/intent-check"><img src="assets/generated/project-3-tr.svg" alt="intent-check: Claude Code skill" width="49%"></a>
-  <a href="https://github.com/shadow-lo?tab=repositories"><img src="assets/generated/project-more-tr.svg" alt="+6 repo daha" width="49%"></a>
+  <a href="https://github.com/shadow-lo/commit-story"><img src="assets/generated/project-1-tr.svg" alt="commit-story: Python CLI" width="49%"></a>
+  <a href="https://github.com/shadow-lo/envdiff"><img src="assets/generated/project-2-tr.svg" alt="envdiff: Python CLI" width="49%"></a>
+  <a href="https://github.com/shadow-lo/token-budget"><img src="assets/generated/project-3-tr.svg" alt="token-budget: Python CLI" width="49%"></a>
+  <a href="https://github.com/shadow-lo?tab=repositories"><img src="assets/generated/project-more-tr.svg" alt="+7 repo daha" width="49%"></a>
 </p>
 <!-- projects:tr:end -->
 

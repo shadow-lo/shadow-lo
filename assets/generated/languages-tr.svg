@@ -24,17 +24,17 @@
 <rect x="28" y="52" width="46" height="3" rx="1.5" fill="url(#aclgtr)"/>
 <clipPath id="barcliptr"><rect x="28" y="72" width="584" height="12" rx="6"/></clipPath>
 <g clip-path="url(#barcliptr)"><rect x="28" y="72" width="584" height="12" fill="#3b2a78"/>
-<rect x="28.0" y="72" width="284.6" height="12" fill="#ffb199"/>
-<rect x="312.6" y="72" width="135.2" height="12" fill="#d16bff"/>
-<rect x="447.8" y="72" width="91.0" height="12" fill="#3b82f6"/>
-<rect x="538.8" y="72" width="48.9" height="12" fill="#f7df1e"/>
-<rect x="587.7" y="72" width="15.0" height="12" fill="#ffd166"/>
-<rect x="602.7" y="72" width="9.3" height="12" fill="#b388ff"/>
+<rect x="28.0" y="72" width="280.3" height="12" fill="#ffb199"/>
+<rect x="308.3" y="72" width="133.2" height="12" fill="#d16bff"/>
+<rect x="441.5" y="72" width="89.6" height="12" fill="#3b82f6"/>
+<rect x="531.1" y="72" width="48.2" height="12" fill="#f7df1e"/>
+<rect x="579.3" y="72" width="23.6" height="12" fill="#ffd166"/>
+<rect x="602.9" y="72" width="9.1" height="12" fill="#b388ff"/>
 </g>
-<g class="fade" style="animation-delay:0ms"><circle cx="35" cy="112" r="5" fill="#ffb199"/><text x="48" y="116" class="l" style="fill:#ece8ff">Rust<tspan dx="8" style="font-size:11px;fill:#a59bd0">48.7%</tspan></text></g>
-<g class="fade" style="animation-delay:100ms"><circle cx="235" cy="112" r="5" fill="#d16bff"/><text x="248" y="116" class="l" style="fill:#ece8ff">Svelte<tspan dx="8" style="font-size:11px;fill:#a59bd0">23.2%</tspan></text></g>
-<g class="fade" style="animation-delay:200ms"><circle cx="435" cy="112" r="5" fill="#3b82f6"/><text x="448" y="116" class="l" style="fill:#ece8ff">TypeScript<tspan dx="8" style="font-size:11px;fill:#a59bd0">15.6%</tspan></text></g>
-<g class="fade" style="animation-delay:300ms"><circle cx="35" cy="142" r="5" fill="#f7df1e"/><text x="48" y="146" class="l" style="fill:#ece8ff">JavaScript<tspan dx="8" style="font-size:11px;fill:#a59bd0">8.4%</tspan></text></g>
-<g class="fade" style="animation-delay:400ms"><circle cx="235" cy="142" r="5" fill="#ffd166"/><text x="248" y="146" class="l" style="fill:#ece8ff">Python<tspan dx="8" style="font-size:11px;fill:#a59bd0">2.6%</tspan></text></g>
+<g class="fade" style="animation-delay:0ms"><circle cx="35" cy="112" r="5" fill="#ffb199"/><text x="48" y="116" class="l" style="fill:#ece8ff">Rust<tspan dx="8" style="font-size:11px;fill:#a59bd0">48.0%</tspan></text></g>
+<g class="fade" style="animation-delay:100ms"><circle cx="235" cy="112" r="5" fill="#d16bff"/><text x="248" y="116" class="l" style="fill:#ece8ff">Svelte<tspan dx="8" style="font-size:11px;fill:#a59bd0">22.8%</tspan></text></g>
+<g class="fade" style="animation-delay:200ms"><circle cx="435" cy="112" r="5" fill="#3b82f6"/><text x="448" y="116" class="l" style="fill:#ece8ff">TypeScript<tspan dx="8" style="font-size:11px;fill:#a59bd0">15.3%</tspan></text></g>
+<g class="fade" style="animation-delay:300ms"><circle cx="35" cy="142" r="5" fill="#f7df1e"/><text x="48" y="146" class="l" style="fill:#ece8ff">JavaScript<tspan dx="8" style="font-size:11px;fill:#a59bd0">8.2%</tspan></text></g>
+<g class="fade" style="animation-delay:400ms"><circle cx="235" cy="142" r="5" fill="#ffd166"/><text x="248" y="146" class="l" style="fill:#ece8ff">Python<tspan dx="8" style="font-size:11px;fill:#a59bd0">4.0%</tspan></text></g>
 <g class="fade" style="animation-delay:500ms"><circle cx="435" cy="142" r="5" fill="#b388ff"/><text x="448" y="146" class="l" style="fill:#ece8ff">Kotlin<tspan dx="8" style="font-size:11px;fill:#a59bd0">1.6%</tspan></text></g>
 </svg>

@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="420" height="176" viewBox="0 0 420 176" role="img" aria-label="+6 more repos">
-<title>+6 more repos</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="176" viewBox="0 0 420 176" role="img" aria-label="+7 more repos">
+<title>+7 more repos</title>
 <defs>
   <linearGradient id="bgmoreen" x1="0" y1="0" x2="1" y2="1">
     <stop offset="0" stop-color="#0e0a24"/><stop offset="1" stop-color="#1d1046"/>
@@ -21,7 +21,7 @@
 <rect x="0.5" y="0.5" width="419" height="175" rx="14" fill="url(#bgmoreen)" stroke="#3b2a78"/>
 <circle cx="380" cy="22" r="1.2" fill="#f3f0ff" opacity="0.7"/><circle cx="330" cy="40" r="0.8" fill="#f3f0ff" opacity="0.5"/><circle cx="270" cy="18" r="1" fill="#f3f0ff" opacity="0.4"/><circle cx="360" cy="146" r="0.8" fill="#f3f0ff" opacity="0.35"/><circle cx="40" cy="154" r="0.9" fill="#f3f0ff" opacity="0.3"/>
 
-<text x="210" y="92" text-anchor="middle" style="font:800 52px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif;fill:url(#acmoreen)" filter="url(#glowmoreen)">+6</text>
+<text x="210" y="92" text-anchor="middle" style="font:800 52px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif;fill:url(#acmoreen)" filter="url(#glowmoreen)">+7</text>
 <text x="210" y="122" text-anchor="middle" class="t" style="font-size:17px">more repos</text>
 <text x="210" y="152" text-anchor="middle" class="s" style="fill:#d16bff">See all repositories →</text>
 
