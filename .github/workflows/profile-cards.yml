@@ -2,7 +2,7 @@ name: profile cards
 
 on:
   schedule:
-    - cron: "17 3 * * *" # every day
+    - cron: "17 */3 * * *" # every 3 hours
   workflow_dispatch:
   push:
     branches: [main]

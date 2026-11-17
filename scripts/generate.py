@@ -40,6 +40,12 @@ OVERRIDES = {
         "en": "Scan a folder, count its tokens, and find out if it fits your model's context window.",
         "tr": "Bir klasörü tarar, token sayar ve modelin bağlam penceresine sığıp sığmadığını söyler.",
     },
+    "commit-story": {
+        "icon": "📜",
+        "kind": "Python CLI",
+        "en": "Turns your git history into a readable summary for standups, weekly reports and CVs.",
+        "tr": "Git geçmişini standup, haftalık rapor ve CV için okunabilir bir özete dönüştürür.",
+    },
     "envdiff": {
         "icon": "🔐",
         "kind": "Python CLI",
