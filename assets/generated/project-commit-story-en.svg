@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="176" viewBox="0 0 420 176" role="img" aria-label="commit-story: Turns your git history into a readable summary for standups, weekly reports and CVs.">
+<title>commit-story: Turns your git history into a readable summary for standups, weekly reports and CVs.</title>
+<defs>
+  <linearGradient id="bgpjcommit-storyen" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0e0a24"/><stop offset="1" stop-color="#1d1046"/>
+  </linearGradient>
+  <linearGradient id="acpjcommit-storyen" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#a970ff"/><stop offset="1" stop-color="#d16bff"/>
+  </linearGradient>
+  <filter id="glowpjcommit-storyen" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<style>
+  .t{font:600 18px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif;fill:#ece8ff}
+  .l{font:400 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif;fill:#a59bd0}
+  .v{font:700 15px 'JetBrains Mono', 'Cascadia Code', Consolas, 'Courier New', monospace;fill:#ece8ff}
+  .big{font:800 34px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif;fill:#f3f0ff}
+  .s{font:400 11px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif;fill:#a59bd0}
+</style>
+<rect x="0.5" y="0.5" width="419" height="175" rx="14" fill="url(#bgpjcommit-storyen)" stroke="#3b2a78" stroke-dasharray="6 5"/>
+<circle cx="380" cy="22" r="1.2" fill="#f3f0ff" opacity="0.7"/><circle cx="330" cy="40" r="0.8" fill="#f3f0ff" opacity="0.5"/><circle cx="270" cy="18" r="1" fill="#f3f0ff" opacity="0.4"/><circle cx="360" cy="146" r="0.8" fill="#f3f0ff" opacity="0.35"/><circle cx="40" cy="154" r="0.9" fill="#f3f0ff" opacity="0.3"/>
+
+<text x="24" y="42" class="t" style="font-size:19px">📜 <tspan style="fill:#f3f0ff">commit-story</tspan></text>
+<text x="396" y="40" class="s" text-anchor="end" style="fill:#d16bff">Python CLI</text>
+<rect x="24" y="54" width="40" height="3" rx="1.5" fill="url(#acpjcommit-storyen)"/>
+<text y="84" class="l"><tspan x="24" dy="0">Turns your git history into a readable summary</tspan><tspan x="24" dy="19">for standups, weekly reports and CVs.</tspan></text>
+<rect x="24" y="138" width="101" height="22" rx="11" fill="none" stroke="#a970ff" stroke-dasharray="3 3"/><text x="74.5" y="153" class="s" text-anchor="middle" style="fill:#a970ff">⏳ coming soon</text>
+
+</svg>

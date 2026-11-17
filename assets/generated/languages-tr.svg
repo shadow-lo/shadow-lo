@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="176" viewBox="0 0 640 176" role="img" aria-label="En çok kullanılan diller">
+<title>En çok kullanılan diller</title>
+<defs>
+  <linearGradient id="bglgtr" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0e0a24"/><stop offset="1" stop-color="#1d1046"/>
+  </linearGradient>
+  <linearGradient id="aclgtr" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#a970ff"/><stop offset="1" stop-color="#d16bff"/>
+  </linearGradient>
+  <filter id="glowlgtr" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<style>
+  .t{font:600 18px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif;fill:#ece8ff}
+  .l{font:400 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif;fill:#a59bd0}
+  .v{font:700 15px 'JetBrains Mono', 'Cascadia Code', Consolas, 'Courier New', monospace;fill:#ece8ff}
+  .big{font:800 34px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif;fill:#f3f0ff}
+  .s{font:400 11px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif;fill:#a59bd0}
+</style>
+<rect x="0.5" y="0.5" width="639" height="175" rx="14" fill="url(#bglgtr)" stroke="#3b2a78"/>
+<circle cx="600" cy="22" r="1.2" fill="#f3f0ff" opacity="0.7"/><circle cx="550" cy="40" r="0.8" fill="#f3f0ff" opacity="0.5"/><circle cx="490" cy="18" r="1" fill="#f3f0ff" opacity="0.4"/><circle cx="580" cy="146" r="0.8" fill="#f3f0ff" opacity="0.35"/><circle cx="40" cy="154" r="0.9" fill="#f3f0ff" opacity="0.3"/>
+<text x="28" y="40" class="t">💻 En çok kullanılan diller</text>
+<rect x="28" y="52" width="46" height="3" rx="1.5" fill="url(#aclgtr)"/>
+<clipPath id="barcliptr"><rect x="28" y="72" width="584" height="12" rx="6"/></clipPath>
+<g clip-path="url(#barcliptr)"><rect x="28" y="72" width="584" height="12" fill="#3b2a78"/>
+<rect x="28.0" y="72" width="284.6" height="12" fill="#ffb199"/>
+<rect x="312.6" y="72" width="135.2" height="12" fill="#d16bff"/>
+<rect x="447.8" y="72" width="91.0" height="12" fill="#3b82f6"/>
+<rect x="538.8" y="72" width="48.9" height="12" fill="#f7df1e"/>
+<rect x="587.7" y="72" width="15.0" height="12" fill="#ffd166"/>
+<rect x="602.7" y="72" width="9.3" height="12" fill="#b388ff"/>
+</g>
+<g class="fade" style="animation-delay:0ms"><circle cx="35" cy="112" r="5" fill="#ffb199"/><text x="48" y="116" class="l" style="fill:#ece8ff">Rust<tspan dx="8" style="font-size:11px;fill:#a59bd0">48.7%</tspan></text></g>
+<g class="fade" style="animation-delay:100ms"><circle cx="235" cy="112" r="5" fill="#d16bff"/><text x="248" y="116" class="l" style="fill:#ece8ff">Svelte<tspan dx="8" style="font-size:11px;fill:#a59bd0">23.2%</tspan></text></g>
+<g class="fade" style="animation-delay:200ms"><circle cx="435" cy="112" r="5" fill="#3b82f6"/><text x="448" y="116" class="l" style="fill:#ece8ff">TypeScript<tspan dx="8" style="font-size:11px;fill:#a59bd0">15.6%</tspan></text></g>
+<g class="fade" style="animation-delay:300ms"><circle cx="35" cy="142" r="5" fill="#f7df1e"/><text x="48" y="146" class="l" style="fill:#ece8ff">JavaScript<tspan dx="8" style="font-size:11px;fill:#a59bd0">8.4%</tspan></text></g>
+<g class="fade" style="animation-delay:400ms"><circle cx="235" cy="142" r="5" fill="#ffd166"/><text x="248" y="146" class="l" style="fill:#ece8ff">Python<tspan dx="8" style="font-size:11px;fill:#a59bd0">2.6%</tspan></text></g>
+<g class="fade" style="animation-delay:500ms"><circle cx="435" cy="142" r="5" fill="#b388ff"/><text x="448" y="146" class="l" style="fill:#ece8ff">Kotlin<tspan dx="8" style="font-size:11px;fill:#a59bd0">1.6%</tspan></text></g>
+</svg>
