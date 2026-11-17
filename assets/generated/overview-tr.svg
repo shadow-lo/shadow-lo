@@ -22,8 +22,8 @@
 <circle cx="600" cy="22" r="1.2" fill="#f3f0ff" opacity="0.7"/><circle cx="550" cy="40" r="0.8" fill="#f3f0ff" opacity="0.5"/><circle cx="490" cy="18" r="1" fill="#f3f0ff" opacity="0.4"/><circle cx="580" cy="210" r="0.8" fill="#f3f0ff" opacity="0.35"/><circle cx="40" cy="218" r="0.9" fill="#f3f0ff" opacity="0.3"/>
 <text x="28" y="40" class="t">🌙 Genel Bakış</text>
 <rect x="28" y="52" width="46" height="3" rx="1.5" fill="url(#acovtr)"/>
-<g class="fade" style="animation-delay:0ms"><text x="30" y="86" class="l" fill="#a970ff" style="fill:#a970ff">✦</text><text x="52" y="86" class="l">Toplam katkı</text><text x="330" y="86" class="v" text-anchor="end">36</text></g>
-<g class="fade" style="animation-delay:120ms"><text x="30" y="114" class="l" fill="#a970ff" style="fill:#a970ff">◆</text><text x="52" y="114" class="l">Commit (2026)</text><text x="330" y="114" class="v" text-anchor="end">14</text></g>
+<g class="fade" style="animation-delay:0ms"><text x="30" y="86" class="l" fill="#a970ff" style="fill:#a970ff">✦</text><text x="52" y="86" class="l">Toplam katkı</text><text x="330" y="86" class="v" text-anchor="end">37</text></g>
+<g class="fade" style="animation-delay:120ms"><text x="30" y="114" class="l" fill="#a970ff" style="fill:#a970ff">◆</text><text x="52" y="114" class="l">Commit (2026)</text><text x="330" y="114" class="v" text-anchor="end">15</text></g>
 <g class="fade" style="animation-delay:240ms"><text x="30" y="142" class="l" fill="#a970ff" style="fill:#a970ff">❖</text><text x="52" y="142" class="l">Açık repo</text><text x="330" y="142" class="v" text-anchor="end">9</text></g>
 <g class="fade" style="animation-delay:360ms"><text x="30" y="170" class="l" fill="#a970ff" style="fill:#a970ff">★</text><text x="52" y="170" class="l">Kazanılan yıldız</text><text x="330" y="170" class="v" text-anchor="end">2</text></g>
 <g class="fade" style="animation-delay:480ms"><text x="30" y="198" class="l" fill="#a970ff" style="fill:#a970ff">⇄</text><text x="52" y="198" class="l">Pull request</text><text x="330" y="198" class="v" text-anchor="end">0</text></g>
