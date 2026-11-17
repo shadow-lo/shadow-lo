@@ -23,29 +23,30 @@ OUT = ROOT / "assets" / "generated"
 DATA = ROOT / "assets" / "data.json"
 SKIP_REPOS = {USER}  # the profile repo itself
 
-PROJECTS = [
-    {
-        "repo": "intent-check",
+MAX_PROJECTS = 3  # most recently pushed public repos shown on the profile; a 4th card links to the rest
+
+# Optional nicer text for a repo card. Repos not listed here still get a card,
+# built from their GitHub description and language.
+OVERRIDES = {
+    "intent-check": {
         "icon": "🎯",
         "kind": "Claude Code skill",
         "en": "Checks finished AI work against your original request, with evidence, and fixes what doesn't match.",
         "tr": "Biten yapay zeka işini ilk isteğinle kanıtlı şekilde karşılaştırır, uymayanı düzeltir.",
     },
-    {
-        "repo": "token-budget",
+    "token-budget": {
         "icon": "🧮",
         "kind": "Python CLI",
         "en": "Scan a folder, count its tokens, and find out if it fits your model's context window.",
         "tr": "Bir klasörü tarar, token sayar ve modelin bağlam penceresine sığıp sığmadığını söyler.",
     },
-    {
-        "repo": "envdiff",
+    "envdiff": {
         "icon": "🔐",
         "kind": "Python CLI",
         "en": "Keeps .env and .env.example in sync and catches real secrets, without printing a value.",
         "tr": ".env ile .env.example'ı senkron tutar, gerçek sırları değer göstermeden yakalar.",
     },
-]
+}
 
 LANG_COLORS = {
     "C#": "#9b4dff", "Dart": "#4fc3f7", "Python": "#ffd166", "TypeScript": "#3b82f6",
@@ -60,14 +61,14 @@ T = {
         "overview": "Overview", "contrib": "Total contributions", "commits": "Commits",
         "repos": "Public repos", "stars": "Stars earned", "prs": "Pull requests",
         "streak": "Current streak", "longest": "Longest streak", "days": "days",
-        "since": "since", "langs": "Most used languages",
+        "since": "since", "langs": "Most used languages", "more": "more repos", "all": "See all repositories →",
         "updated": "updated",
     },
     "tr": {
         "overview": "Genel Bakış", "contrib": "Toplam katkı", "commits": "Commit",
         "repos": "Açık repo", "stars": "Kazanılan yıldız", "prs": "Pull request",
         "streak": "Güncel seri", "longest": "En uzun seri", "days": "gün",
-        "since": "başlangıç", "langs": "En çok kullanılan diller",
+        "since": "başlangıç", "langs": "En çok kullanılan diller", "more": "repo daha", "all": "Tüm repoları gör →",
         "updated": "güncellendi",
     },
 }
@@ -120,14 +121,13 @@ def fetch(token: str) -> dict:
         for name, size in _request(f"{api}/repos/{USER}/{r['name']}/languages", token).items():
             langs[name] = langs.get(name, 0) + size
 
-    by_name = {r["name"]: r for r in repos}
-    projects = {}
-    for p in PROJECTS:
-        r = by_name.get(p["repo"])
-        projects[p["repo"]] = (
-            {"exists": True, "stars": r["stargazers_count"], "forks": r["forks_count"],
-             "language": r["language"]} if r else {"exists": False}
-        )
+    recent = sorted((r for r in own if not r.get("archived")), key=lambda r: r["pushed_at"], reverse=True)
+    projects = [
+        {"repo": r["name"], "url": r["html_url"], "description": r.get("description") or "",
+         "language": r.get("language"), "stars": r["stargazers_count"], "forks": r["forks_count"]}
+        for r in recent[:MAX_PROJECTS]
+    ]
+    more = max(len(own) - len(projects), 0)
 
     years = _graphql(token, "query($u:String!){user(login:$u){createdAt contributionsCollection{contributionYears}}}",
                      {"u": USER})["user"]
@@ -159,6 +159,7 @@ def fetch(token: str) -> dict:
         "days": days,
         "langs": langs,
         "projects": projects,
+        "more": more,
     }
 
 
@@ -309,22 +310,60 @@ def _wrap(text: str, width: int) -> list[str]:
     return lines + [cur] if cur else lines
 
 
-def project_svg(p: dict, info: dict, lang: str) -> str:
-    lines = _wrap(p[lang], 46)[:3]
+def project_svg(info: dict, lang: str) -> str:
+    o = OVERRIDES.get(info["repo"], {})
+    icon = o.get("icon", "✦")
+    kind = o.get("kind") or info.get("language") or ""
+    text = o.get(lang) or info.get("description") or ""
+    lines = _wrap(text, 46)[:3]
     desc = "".join(f'<tspan x="24" dy="{0 if i == 0 else 19}">{escape(s)}</tspan>' for i, s in enumerate(lines))
-    foot = (f'<circle cx="30" cy="149" r="5" fill="{LANG_COLORS.get(info.get("language") or "", ACCENT)}"/>'
-            f'<text x="42" y="153" class="s" style="fill:{TEXT}">{escape(info.get("language") or p["kind"])}</text>'
+    language = info.get("language")
+    foot = (f'<circle cx="30" cy="149" r="5" fill="{LANG_COLORS.get(language or "", ACCENT)}"/>'
+            f'<text x="42" y="153" class="s" style="fill:{TEXT}">{escape(language or "—")}</text>'
             f'<text x="140" y="153" class="s">★ {info.get("stars", 0)}</text>'
             f'<text x="190" y="153" class="s">⑂ {info.get("forks", 0)}</text>')
+    uid = f"pj{''.join(c for c in info['repo'] if c.isalnum())}{lang}"
     body = f"""
-<text x="24" y="42" class="t" style="font-size:19px">{p["icon"]} <tspan style="fill:{MOON}">{escape(p["repo"])}</tspan></text>
-<text x="396" y="40" class="s" text-anchor="end" style="fill:{ACCENT2}">{escape(p["kind"])}</text>
-<rect x="24" y="54" width="40" height="3" rx="1.5" fill="url(#acpj{p['repo']}{lang})"/>
+<text x="24" y="42" class="t" style="font-size:19px">{icon} <tspan style="fill:{MOON}">{escape(info["repo"])}</tspan></text>
+<text x="396" y="40" class="s" text-anchor="end" style="fill:{ACCENT2}">{escape(kind)}</text>
+<rect x="24" y="54" width="40" height="3" rx="1.5" fill="url(#ac{uid})"/>
 <text y="84" class="l">{desc}</text>
 {foot}
 """
-    svg = _frame(420, 176, f"pj{p['repo']}{lang}", body, f"{p['repo']}: {p[lang]}")
-    return svg
+    return _frame(420, 176, uid, body, f"{info['repo']}: {text}" if text else info["repo"])
+
+
+def more_svg(count: int, lang: str) -> str:
+    t = T[lang]
+    uid = f"more{lang}"
+    body = f"""
+<text x="210" y="92" text-anchor="middle" style="font:800 52px {FONT};fill:url(#ac{uid})" filter="url(#glow{uid})">+{count}</text>
+<text x="210" y="122" text-anchor="middle" class="t" style="font-size:17px">{escape(t["more"])}</text>
+<text x="210" y="152" text-anchor="middle" class="s" style="fill:{ACCENT2}">{escape(t["all"])}</text>
+"""
+    return _frame(420, 176, uid, body, f"+{count} {t['more']}")
+
+
+def readme_block(projects: list[dict], lang: str, more: int = 0) -> str:
+    rows = []
+    for i, info in enumerate(projects, 1):
+        alt = escape(f"{info['repo']}: {OVERRIDES.get(info['repo'], {}).get('kind') or info.get('language') or 'repo'}")
+        rows.append(f'  <a href="{escape(info["url"])}"><img src="assets/generated/project-{i}-{lang}.svg" '
+                    f'alt="{alt}" width="49%"></a>')
+    if more:
+        rows.append(f'  <a href="https://github.com/{USER}?tab=repositories"><img src="assets/generated/project-more-{lang}.svg" '
+                    f'alt="+{more} {T[lang]["more"]}" width="49%"></a>')
+    return "<p>\n" + "\n".join(rows) + "\n</p>"
+
+
+def update_readme(projects: list[dict], more: int) -> None:
+    readme = ROOT / "README.md"
+    text = readme.read_text(encoding="utf-8")
+    for lang in ("en", "tr"):
+        start, end = f"<!-- projects:{lang}:start -->", f"<!-- projects:{lang}:end -->"
+        a, b = text.index(start) + len(start), text.index(end)
+        text = text[:a] + "\n" + readme_block(projects, lang, more) + "\n" + text[b:]
+    readme.write_text(text, encoding="utf-8")
 
 
 def render(data: dict) -> None:
@@ -332,11 +371,16 @@ def render(data: dict) -> None:
     for lang in ("en", "tr"):
         (OUT / f"overview-{lang}.svg").write_text(overview_svg(data, lang), encoding="utf-8")
         (OUT / f"languages-{lang}.svg").write_text(langs_svg(data, lang), encoding="utf-8")
-        for p in PROJECTS:
-            info = data["projects"].get(p["repo"], {"exists": False})
-            if not info.get("exists"):  # only published repos are shown
-                continue
-            (OUT / f"project-{p['repo']}-{lang}.svg").write_text(project_svg(p, info, lang), encoding="utf-8")
+    for old in OUT.glob("project-*.svg"):
+        old.unlink()
+    for i, info in enumerate(data["projects"], 1):
+        for lang in ("en", "tr"):
+            (OUT / f"project-{i}-{lang}.svg").write_text(project_svg(info, lang), encoding="utf-8")
+    more = data.get("more", 0)
+    if more:
+        for lang in ("en", "tr"):
+            (OUT / f"project-more-{lang}.svg").write_text(more_svg(more, lang), encoding="utf-8")
+    update_readme(data["projects"], more)
 
 
 def main() -> int:

@@ -17,11 +17,8 @@ I mostly code in **.NET (C#)**, **Dart** and **Python**, and lately I build smal
 
 ### 🚀 Projects
 
-<p>
-  <a href="https://github.com/shadow-lo/intent-check"><img src="assets/generated/project-intent-check-en.svg" alt="intent-check: Claude Code skill" width="49%"></a>
-  <a href="https://github.com/shadow-lo/token-budget"><img src="assets/generated/project-token-budget-en.svg" alt="token-budget: Python CLI" width="49%"></a>
-  <a href="https://github.com/shadow-lo/envdiff"><img src="assets/generated/project-envdiff-en.svg" alt="envdiff: Python CLI" width="49%"></a>
-</p>
+<!-- projects:en:start -->
+<!-- projects:en:end -->
 
 ### 📊 Stats
 
@@ -41,11 +38,8 @@ I mostly code in **.NET (C#)**, **Dart** and **Python**, and lately I build smal
 
 ### 🚀 Projeler
 
-<p>
-  <a href="https://github.com/shadow-lo/intent-check"><img src="assets/generated/project-intent-check-tr.svg" alt="intent-check: Claude Code skill" width="49%"></a>
-  <a href="https://github.com/shadow-lo/token-budget"><img src="assets/generated/project-token-budget-tr.svg" alt="token-budget: Python CLI" width="49%"></a>
-  <a href="https://github.com/shadow-lo/envdiff"><img src="assets/generated/project-envdiff-tr.svg" alt="envdiff: Python CLI" width="49%"></a>
-</p>
+<!-- projects:tr:start -->
+<!-- projects:tr:end -->
 
 ### 📊 İstatistikler
 
