@@ -31,8 +31,8 @@
 <line x1="370" y1="40" x2="370" y2="206" stroke="#3b2a78"/>
 <circle cx="515" cy="112" r="52" fill="none" stroke="#3b2a78" stroke-width="8"/>
 <circle cx="515" cy="112" r="52" fill="none" stroke="url(#acovtr)" stroke-width="8" stroke-linecap="round"
-  stroke-dasharray="326.7 326.7" transform="rotate(-90 515 112)" filter="url(#glowovtr)"/>
-<text x="515" y="124" class="big" text-anchor="middle">2</text>
+  stroke-dasharray="0.0 326.7" transform="rotate(-90 515 112)" filter="url(#glowovtr)"/>
+<text x="515" y="124" class="big" text-anchor="middle">0</text>
 <text x="515" y="194" class="l" text-anchor="middle" style="font-weight:600;fill:#ece8ff">🔥 Güncel seri</text>
 <text x="515" y="211" class="s" text-anchor="middle">En uzun seri: 2 gün</text>
 <text x="515" y="32" class="s" text-anchor="middle">başlangıç 13 Tem 2020</text>
