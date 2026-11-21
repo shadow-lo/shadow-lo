@@ -1,5 +1,5 @@
 {
- "commits_year": 18,
+ "commits_year": 42,
  "created": "2020-07-13",
  "days": {
   "2020-01-01": 0,
@@ -2517,8 +2517,8 @@
   "2026-11-17": 20,
   "2026-11-18": 0,
   "2026-11-19": 0,
-  "2026-11-20": 0,
-  "2026-11-21": 0,
+  "2026-11-20": 3,
+  "2026-11-21": 25,
   "2026-11-22": 0,
   "2026-11-23": 0,
   "2026-11-24": 0,
@@ -2568,42 +2568,42 @@
   "Kotlin": 49054,
   "NSIS": 33764,
   "PowerShell": 13385,
-  "Python": 126656,
+  "Python": 593516,
   "Rust": 1504739,
   "Shell": 1044,
   "Svelte": 714792,
   "TypeScript": 481044
  },
- "more": 7,
+ "more": 11,
  "projects": [
   {
    "description": "",
    "forks": 0,
    "language": "Python",
-   "repo": "commit-story",
+   "repo": "handoff",
    "stars": 0,
-   "url": "https://github.com/shadow-lo/commit-story"
+   "url": "https://github.com/shadow-lo/handoff"
   },
   {
    "description": "",
    "forks": 0,
    "language": "Python",
-   "repo": "envdiff",
+   "repo": "issue-to-brief",
    "stars": 0,
-   "url": "https://github.com/shadow-lo/envdiff"
+   "url": "https://github.com/shadow-lo/issue-to-brief"
   },
   {
    "description": "",
    "forks": 0,
    "language": "Python",
-   "repo": "token-budget",
+   "repo": "subagent-verify",
    "stars": 0,
-   "url": "https://github.com/shadow-lo/token-budget"
+   "url": "https://github.com/shadow-lo/subagent-verify"
   }
  ],
  "prs": 0,
- "repos": 10,
+ "repos": 14,
  "stars": 2,
- "total": 41,
+ "total": 69,
  "updated": "2026-11-21"
 }
