@@ -22,17 +22,17 @@
 <circle cx="600" cy="22" r="1.2" fill="#f3f0ff" opacity="0.7"/><circle cx="550" cy="40" r="0.8" fill="#f3f0ff" opacity="0.5"/><circle cx="490" cy="18" r="1" fill="#f3f0ff" opacity="0.4"/><circle cx="580" cy="210" r="0.8" fill="#f3f0ff" opacity="0.35"/><circle cx="40" cy="218" r="0.9" fill="#f3f0ff" opacity="0.3"/>
 <text x="28" y="40" class="t">🌙 Overview</text>
 <rect x="28" y="52" width="46" height="3" rx="1.5" fill="url(#acoven)"/>
-<g class="fade" style="animation-delay:0ms"><text x="30" y="86" class="l" fill="#a970ff" style="fill:#a970ff">✦</text><text x="52" y="86" class="l">Total contributions</text><text x="330" y="86" class="v" text-anchor="end">69</text></g>
-<g class="fade" style="animation-delay:120ms"><text x="30" y="114" class="l" fill="#a970ff" style="fill:#a970ff">◆</text><text x="52" y="114" class="l">Commits (2026)</text><text x="330" y="114" class="v" text-anchor="end">42</text></g>
-<g class="fade" style="animation-delay:240ms"><text x="30" y="142" class="l" fill="#a970ff" style="fill:#a970ff">❖</text><text x="52" y="142" class="l">Public repos</text><text x="330" y="142" class="v" text-anchor="end">14</text></g>
+<g class="fade" style="animation-delay:0ms"><text x="30" y="86" class="l" fill="#a970ff" style="fill:#a970ff">✦</text><text x="52" y="86" class="l">Total contributions</text><text x="330" y="86" class="v" text-anchor="end">77</text></g>
+<g class="fade" style="animation-delay:120ms"><text x="30" y="114" class="l" fill="#a970ff" style="fill:#a970ff">◆</text><text x="52" y="114" class="l">Commits (2026)</text><text x="330" y="114" class="v" text-anchor="end">46</text></g>
+<g class="fade" style="animation-delay:240ms"><text x="30" y="142" class="l" fill="#a970ff" style="fill:#a970ff">❖</text><text x="52" y="142" class="l">Public repos</text><text x="330" y="142" class="v" text-anchor="end">18</text></g>
 <g class="fade" style="animation-delay:360ms"><text x="30" y="170" class="l" fill="#a970ff" style="fill:#a970ff">★</text><text x="52" y="170" class="l">Stars earned</text><text x="330" y="170" class="v" text-anchor="end">2</text></g>
 <g class="fade" style="animation-delay:480ms"><text x="30" y="198" class="l" fill="#a970ff" style="fill:#a970ff">⇄</text><text x="52" y="198" class="l">Pull requests</text><text x="330" y="198" class="v" text-anchor="end">0</text></g>
 
 <line x1="370" y1="40" x2="370" y2="206" stroke="#3b2a78"/>
 <circle cx="515" cy="112" r="52" fill="none" stroke="#3b2a78" stroke-width="8"/>
 <circle cx="515" cy="112" r="52" fill="none" stroke="url(#acoven)" stroke-width="8" stroke-linecap="round"
-  stroke-dasharray="0.0 326.7" transform="rotate(-90 515 112)" filter="url(#glowoven)"/>
-<text x="515" y="124" class="big" text-anchor="middle">0</text>
+  stroke-dasharray="163.4 326.7" transform="rotate(-90 515 112)" filter="url(#glowoven)"/>
+<text x="515" y="124" class="big" text-anchor="middle">1</text>
 <text x="515" y="194" class="l" text-anchor="middle" style="font-weight:600;fill:#ece8ff">🔥 Current streak</text>
 <text x="515" y="211" class="s" text-anchor="middle">Longest streak: 2 days</text>
 <text x="515" y="32" class="s" text-anchor="middle">since 13 Jul 2020</text>

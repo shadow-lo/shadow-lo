@@ -1,5 +1,5 @@
 {
- "commits_year": 42,
+ "commits_year": 46,
  "created": "2020-07-13",
  "days": {
   "2020-01-01": 0,
@@ -2520,7 +2520,7 @@
   "2026-11-20": 3,
   "2026-11-21": 25,
   "2026-11-22": 0,
-  "2026-11-23": 0,
+  "2026-11-23": 8,
   "2026-11-24": 0,
   "2026-11-25": 0,
   "2026-11-26": 0,
@@ -2568,42 +2568,42 @@
   "Kotlin": 49054,
   "NSIS": 33764,
   "PowerShell": 13385,
-  "Python": 593516,
+  "Python": 709565,
   "Rust": 1504739,
   "Shell": 1044,
   "Svelte": 714792,
-  "TypeScript": 481044
+  "TypeScript": 502553
  },
- "more": 11,
+ "more": 15,
  "projects": [
   {
    "description": "",
    "forks": 0,
    "language": "Python",
-   "repo": "handoff",
+   "repo": "agent-md-audit",
    "stars": 0,
-   "url": "https://github.com/shadow-lo/handoff"
+   "url": "https://github.com/shadow-lo/agent-md-audit"
   },
   {
    "description": "",
    "forks": 0,
    "language": "Python",
-   "repo": "issue-to-brief",
+   "repo": "mcp-probe",
    "stars": 0,
-   "url": "https://github.com/shadow-lo/issue-to-brief"
+   "url": "https://github.com/shadow-lo/mcp-probe"
   },
   {
    "description": "",
    "forks": 0,
    "language": "Python",
-   "repo": "subagent-verify",
+   "repo": "skill-lint",
    "stars": 0,
-   "url": "https://github.com/shadow-lo/subagent-verify"
+   "url": "https://github.com/shadow-lo/skill-lint"
   }
  ],
  "prs": 0,
- "repos": 14,
+ "repos": 18,
  "stars": 2,
- "total": 69,
- "updated": "2026-11-23"
+ "total": 77,
+ "updated": "2026-11-24"
 }
