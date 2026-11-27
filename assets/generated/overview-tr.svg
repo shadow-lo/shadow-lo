@@ -25,7 +25,7 @@
 <g class="fade" style="animation-delay:0ms"><text x="30" y="86" class="l" fill="#a970ff" style="fill:#a970ff">✦</text><text x="52" y="86" class="l">Toplam katkı</text><text x="330" y="86" class="v" text-anchor="end">77</text></g>
 <g class="fade" style="animation-delay:120ms"><text x="30" y="114" class="l" fill="#a970ff" style="fill:#a970ff">◆</text><text x="52" y="114" class="l">Commit (2026)</text><text x="330" y="114" class="v" text-anchor="end">46</text></g>
 <g class="fade" style="animation-delay:240ms"><text x="30" y="142" class="l" fill="#a970ff" style="fill:#a970ff">❖</text><text x="52" y="142" class="l">Açık repo</text><text x="330" y="142" class="v" text-anchor="end">18</text></g>
-<g class="fade" style="animation-delay:360ms"><text x="30" y="170" class="l" fill="#a970ff" style="fill:#a970ff">★</text><text x="52" y="170" class="l">Kazanılan yıldız</text><text x="330" y="170" class="v" text-anchor="end">2</text></g>
+<g class="fade" style="animation-delay:360ms"><text x="30" y="170" class="l" fill="#a970ff" style="fill:#a970ff">★</text><text x="52" y="170" class="l">Kazanılan yıldız</text><text x="330" y="170" class="v" text-anchor="end">20</text></g>
 <g class="fade" style="animation-delay:480ms"><text x="30" y="198" class="l" fill="#a970ff" style="fill:#a970ff">⇄</text><text x="52" y="198" class="l">Pull request</text><text x="330" y="198" class="v" text-anchor="end">0</text></g>
 
 <line x1="370" y1="40" x2="370" y2="206" stroke="#3b2a78"/>

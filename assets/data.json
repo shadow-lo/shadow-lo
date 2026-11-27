@@ -2581,7 +2581,7 @@
    "forks": 0,
    "language": "Python",
    "repo": "agent-md-audit",
-   "stars": 0,
+   "stars": 1,
    "url": "https://github.com/shadow-lo/agent-md-audit"
   },
   {
@@ -2589,7 +2589,7 @@
    "forks": 0,
    "language": "Python",
    "repo": "mcp-probe",
-   "stars": 0,
+   "stars": 1,
    "url": "https://github.com/shadow-lo/mcp-probe"
   },
   {
@@ -2597,13 +2597,13 @@
    "forks": 0,
    "language": "Python",
    "repo": "skill-lint",
-   "stars": 0,
+   "stars": 1,
    "url": "https://github.com/shadow-lo/skill-lint"
   }
  ],
  "prs": 0,
  "repos": 18,
- "stars": 2,
+ "stars": 20,
  "total": 77,
  "updated": "2026-11-27"
 }
